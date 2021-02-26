@@ -1,13 +1,16 @@
 import React from 'react'
-
-function SearchForm(props) {
-    return (
-        <form className="search">
-            <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
-                Search
-            </button>
-        </form>
-    ); 
-}
-
-export default SearchForm;
+      const SearchName = () => {
+        return (
+          <div className="searchbox">
+            <div className="input-group">
+                <input
+                className="form-control mr-sm-2"
+                type="search"
+                placeholder="Name"
+                aria-label="Search"
+              />
+              </div>
+          </div>
+        );
+      }
+      export default SearchName;
