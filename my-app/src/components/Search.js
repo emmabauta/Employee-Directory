@@ -1,6 +1,7 @@
 import React from 'react'
       const SearchName = () => {
         return (
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="searchbox">
             <div className="input-group">
                 <input
@@ -11,6 +12,7 @@ import React from 'react'
               />
               </div>
           </div>
+        </nav>
         );
       }
       export default SearchName;
