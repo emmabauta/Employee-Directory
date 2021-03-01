@@ -16,9 +16,7 @@ function App() {
     dob: ""
   });
   useEffect(() => {
-    API.getUsers.then((res) => {
-      setRowState(res);
-    });
+    API.getUsers().then(res => setRowState(res)).catch()
   }, []);
   return (
     <div className="App">

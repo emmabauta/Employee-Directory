@@ -14,6 +14,7 @@ const DataTable = () => {
                     <th class="col-md-2 align-middle">DOB</th>
                 </tr>
                 <thrad>
+                    {/* pass users and map over the users and for each user return DataRow */}
                     <DataRow/>
                 </thrad>
             </table>
