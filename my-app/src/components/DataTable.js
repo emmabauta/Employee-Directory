@@ -1,5 +1,6 @@
 import React from 'react';
 import DataRow from './DataRow';
+
 const DataTable = () => {
     return (
         <div className="datatable mt-5">
