@@ -24,7 +24,8 @@ const DataTable = () => {
                         context.data.results.map(({ name, picture, phone, email, dob }) => {
                             return (
                                 <DataRow image={picture.medium}
-                                    name={name.first}
+                                    firstName={name.first}
+                                    lastName={name.last}
                                     phoneNumber={phone}
                                     email={email}
                                     dob={dob.date}/>

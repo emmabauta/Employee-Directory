@@ -4,7 +4,7 @@ import API from "../utils/API";
 // import DataTable from "./DataTable";
 
 const DataRow = ({
-    image, name, phoneNumber, email, dob
+    image, firstName,lastName,phoneNumber, email, dob
 }) => {
     const [rowState, setRowState] = useState({
         users: []
@@ -24,11 +24,11 @@ const DataRow = ({
             value={{ rowState }}
         >
             <tr class="col-xs-12">
-                    <th class="col-md-3 align-middle"> <img src = {image}/></th>
-                    <th class="col-md-3 align-middle">{name.first}{name.last}</th>
-                    <th class="col-md-2 align-middle">{phoneNumber}</th>
-                    <th class="col-md-2 align-middle">{email}</th>
-                    <th class="col-md-2 align-middle">{dob}</th>
+                    <td class="col-md-3 align-middle"> <img src = {image}/> </td>
+                    <td class="col-md-3 align-middle">{firstName} {lastName}</td>
+                    <td class="col-md-2 align-middle">{phoneNumber}</td>
+                    <td class="col-md-2 align-middle">{email}</td>
+                    <td class="col-md-2 align-middle">{dob}</td>
                 </tr>
         </DataContext.Provider>
     );
