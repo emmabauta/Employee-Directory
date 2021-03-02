@@ -26,6 +26,7 @@ npm i
 ## Usage
 
 Clone this repo or click here to view deployed app.
+https://emmabauta.github.io/Employee-Directory/
 
   
 ## Contributing
