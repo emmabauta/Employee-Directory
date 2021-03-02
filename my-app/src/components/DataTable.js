@@ -4,7 +4,6 @@ import DataContext from '../utils/DataContext'
 const DataTable = () => {
     const context = useContext(DataContext);
     console.log(context);
-    console.log(context.users);
 
     return (
         <div className="datatable mt-5">
@@ -19,16 +18,16 @@ const DataTable = () => {
                 </tr></thead>
                 <tbody>
                     {/* pass users and map over the users and for each user return DataRow */}
-                {!context.users ? (
+                {!context.data ? (
                     <></>
                 ) : (
-                        context.data.results.map(user => {
+                        context.data.results.map(({ name, picture, phone, email, dob }) => {
                             return (
-                                <DataRow image={user.picture}
-                                    name={user.name}
-                                    phoneNumber={user.phone}
-                                    email={user.email}
-                                    dob={user.dob}/>
+                                <DataRow image={picture.medium}
+                                    name={name.first}
+                                    phoneNumber={phone}
+                                    email={email}
+                                    dob={dob.date}/>
                             );
                         })
                     )

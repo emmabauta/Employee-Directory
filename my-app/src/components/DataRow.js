@@ -23,9 +23,6 @@ const DataRow = ({
         <DataContext.Provider
             value={{ rowState }}
         >
-            <div className="data-area">
-                {rowState.users.length > 0 ? <DataTable /> : <div></div>}
-            </div>
             <tr class="col-xs-12">
                     <th class="col-md-3 align-middle">{image}</th>
                     <th class="col-md-3 align-middle">{name}</th>
